@@ -12,26 +12,11 @@
   var cloudSpeed = 0.2;
 
   //color variables
-  var skyColor;
-  var cloudColor;
-  var oceanColor;
-  var whiteWashColor;
-  var sandColor;
-  var sunColor;
-  var birdColor;
-  var starfishColor;
-  var paperColor;
-  var palmColorB;
-  var palmColorF;
-  var coconutColorA;
-  var coconutColorB;
-  var coconutTrunkColor;
-  var crabColorA;
-  var crabcolorB;
+  var skyColor, cloudColor, oceanColor, whiteWashColor, sandColor, sunColor, birdColor, starfishColor;
+  var palmColorB, palmColorF, coconutColorA, coconutColorB, coconutTrunkColor, crabColorA, crabcolorB;
 
   //opacity variables
-  var a;
-  var b;
+  var a, b;
 
   //moving parts x and y variables
   var birdx1 = 150;
@@ -52,8 +37,16 @@
   var craby = 473;
 
   function setup() {
-      createCanvas(750, 500);
+      var c = createCanvas(750, 500);
+      c.position((windowWidth - 750) / 2, 20);
       noCursor();
+
+      // var myText = createP("Nicole He is a human being and a graduate student at NYU's Interactive Telecommunications Program.");
+      // myText.position((windowWidth - 750) / 2, 540);
+      // myText.id("text");
+      // var myText2 = createA("http://nicole.pizza/itp", "ITP school work blog");
+      // myText2.position((windowWidth - 750) / 2, 580);
+      // myText2.id("links");
   }
 
   function drawColors() {
@@ -208,7 +201,7 @@
   }
 
   function drawBirds() {
-          //birds
+      //birds
       noFill();
       strokeWeight(1);
       stroke(birdColor);
@@ -229,7 +222,7 @@
   }
 
   function drawTrees() {
-          //coconut tree back
+      //coconut tree back
       noStroke();
 
       ellipseMode(CORNER);

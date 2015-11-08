@@ -1,12 +1,10 @@
   //width and height variables
-
   var oceanWidth = 800;
   var oceanHeight = 700;
   var whiteWashWidth = 850;
   var whiteWashHeight = 700;
 
   //speed variables
-
   var tideO = 0.5;
   var tideWW = 0.7;
   var cloudSpeed = 0.2;
@@ -40,13 +38,6 @@
       var c = createCanvas(750, 500);
       c.position((windowWidth - 750) / 2, 20);
       noCursor();
-
-      // var myText = createP("Nicole He is a human being and a graduate student at NYU's Interactive Telecommunications Program.");
-      // myText.position((windowWidth - 750) / 2, 540);
-      // myText.id("text");
-      // var myText2 = createA("http://nicole.pizza/itp", "ITP school work blog");
-      // myText2.position((windowWidth - 750) / 2, 580);
-      // myText2.id("links");
   }
 
   function drawColors() {
@@ -72,7 +63,6 @@
   }
 
   function drawSky() {
-      //sky
       background(skyColor);
       noStroke();
       from = color(225, 22, 84, a);
@@ -102,7 +92,6 @@
   }
 
   function drawClouds() {
-
       //cloud left
       ellipseMode(CORNER);
       fill(cloudColor);
@@ -144,14 +133,12 @@
   }
 
   function drawSun() {
-      //sun
       fill(sunColor);
       ellipseMode(CENTER);
       ellipse(mouseX, mouseY, 100, 100);
   }
 
   function drawSand() {
-      //sand
       fill(sandColor);
       rect(0, height / 2, width, height / 2);
   }
@@ -319,8 +306,6 @@
   }
 
   function drawMrCrab() {
-
-      //mr. crab
       noFill();
       stroke(crabColorB);
       strokeWeight(2);
@@ -345,7 +330,6 @@
       }
   }
 
-
   function draw() {
       drawColors();
       drawSky();
@@ -358,7 +342,4 @@
       drawBirds();
       drawTrees();
       drawMrCrab();
-
-
-
   }

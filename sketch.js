@@ -333,9 +333,9 @@
   function draw() {
       drawColors();
       drawSky();
+      drawSun();
       drawClouds();
       moveClouds();
-      drawSun();
       drawSand();
       drawStarfish();
       drawOcean();

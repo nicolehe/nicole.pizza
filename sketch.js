@@ -169,6 +169,7 @@
 
   function drawOcean() {
       //ocean
+      ellipseMode(CENTER);
       noStroke();
       fill(whiteWashColor); //whitewash
       arc(200, height / 2, whiteWashWidth, whiteWashHeight, 0, PI, CHORD);
